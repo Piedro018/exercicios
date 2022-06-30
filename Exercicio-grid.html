@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <title>Exercício 1 - Grid</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">Meu Projeto</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Início</a>
+          <a class="nav-link " href="#">Sobre</a>
+          <a class="nav-link" href="#">Contato</a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-8">
+        <img src="imags/burger.jpg" class="img-fluid">
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col">
+
+            <p class="fs-3 fw-bolder"> Hambúrguer 180g</p>
+            <p class="text-uppercase fw-semibold fs-3">R$ 18,90</p>
+            <p>Quantidade</p>
+            <div class="input-group mb-2">
+              <span class="input-group-text" id="basic-addon1"><i class="bi bi-dash-lg"></i></span>
+              <input type="text" class="form-control text-center" value="1" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1">
+              <span class="input-group-text" id="basic-addon1"><i class="bi bi-plus-lg"></i></span>
+            </div>
+            <button type="button" class="btn btn-success btn-lg w-100 "><i class="bi bi-basket3 me-2"></i>Adicionar a
+              Sacola </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col">
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                <i class="bi bi-info-circle-fill me-2"></i>Informações Sobre o Produto
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Origem do hambúrger.</strong>"A origem do hambúrguer não é clara, embora
+                "sanduíches de bife de hambúrguer" tenham sido anunciados em jornais dos EUA de Nova York ao Havaí desde
+                pelo menos a década de 1890.
+                A invenção dos hambúrgueres é comumente atribuída a várias pessoas, incluindo Charlie Nagreen,
+                Frank e Charles Menches, Oscar Weber Bilby, Fletcher Davis ou Louis Lassen."
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row mt-3">
+      <p class="fs-3 fw-semibolder"> Produtos Relacionados</p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4 g-4">
+      <div class="col-lg">
+        <div class="card">
+          <img src="imags/burger.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hambúrger 180g</h5>
+            <a href="#" class="badge rounded-pill text-bg-warning text-decoration-none">Mais Pedidos</a>
+            <a href="#" class="badge rounded-pill text-bg-primary text-decoration-none">Carnes</a>
+            <hr>
+            <div class="row">
+              <div class="col">
+                <p class="text-uppercase fw-semibold text-warning fs-4">R$ 18,90</p>
+              </div>
+              <div class="col text-end">
+                <a href="#"><i class="bi bi-star fs-4 text-secondary"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg">
+        <div class="card">
+          <img src="imags/burger.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hambúrger 180g</h5>
+            <a href="#" class="badge rounded-pill text-bg-warning text-decoration-none">Mais Pedidos</a>
+            <a href="#" class="badge rounded-pill text-bg-primary text-decoration-none">Carnes</a>
+            <hr>
+            <div class="row">
+              <div class="col">
+                <p class="text-uppercase fw-semibold text-warning fs-4">R$ 18,90</p>
+              </div>
+              <div class="col text-end">
+                <a href="#"><i class="bi bi-star fs-4 text-secondary"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg">
+        <div class="card">
+          <img src="imags/burger.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hambúrger 180g</h5>
+            <a href="#" class="badge rounded-pill text-bg-warning text-decoration-none">Mais Pedidos</a>
+            <a href="#" class="badge rounded-pill text-bg-primary text-decoration-none">Carnes</a>
+            <hr>
+            <div class="row">
+              <div class="col">
+                <p class="text-uppercase fw-semibold text-warning fs-4 ">R$ 18,90</p>
+              </div>
+              <div class="col text-end">
+                <a href="#"><i class="bi bi-star fs-4 text-secondary"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg">
+        <div class="card">
+          <img src="imags/burger.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hambúrger 180g</h5>
+            <a href="#" class="badge rounded-pill text-bg-warning text-decoration-none">Mais Pedidos</a>
+            <a href="#" class="badge rounded-pill text-bg-primary text-decoration-none">Carnes</a>
+            <hr>
+            <div class="row">
+              <div class="col">
+                <p class="text-uppercase fw-semibold text-warning fs-4">R$ 18,90</p>
+              </div>
+              <div class="col text-end">
+                <a href="#"> <i class="bi bi-star fs-4 text-secondary"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-danger bg-gradient mt-5 text-center">
+    <div class="container pt-4">
+      <div class="row">
+        <div class="col">
+          <ul class=" list-unstyled ">
+            <li class="text-white">
+              <H5>INSTITUCIONAL</H5>
+            </li>
+            <li><a class="text-black text-decoration-none" href="#">Desmonstrativos Finaceiros</a></li>
+            <li><a class="text-black text-decoration-none" href="#">Fale das lojas</a></li>
+            <li><a class="text-black text-decoration-none" href="#">Imprensa</a></li>
+            <li><a class="text-black text-decoration-none" href="#">Lojas Físicas</a></li>
+            <li><a class="text-black text-decoration-none" href="#">Quem Somos </a></li>
+            <li><a class="text-black text-decoration-none" href="#">Contato</a></li>
+            <li><a class=" text-decoration-none" style="color: #fc0;" href="#">Trabalhe conosco</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <section class="mb-4">
+            <h5 class="text-white mb-5">SIGA-NOS</h5>
+            <a href="https://pt-br.facebook.com/" target="-_blank" class="text-decoration-none text-muted fs-4 m-3"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/" target="-_blank" class="text-decoration-none text-muted fs-4 m-3"><i
+                class="bi bi-twitter"></i></a>
+            <a href="https://www.google.com/" target="-_blank" class="text-decoration-none text-muted fs-4 m-3"><i
+                class="bi bi-google"></i></a>
+            <a href="https://www.instagram.com/" target="-_blank" class="text-decoration-none text-muted fs-4 m-3"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://br.linkedin.com/" target="-_blank" class="text-decoration-none text-muted fs-4 m-3"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="https://www.google.com/" target="-_blank" class="text-decoration-none text-muted fs-4 m-3"><i
+                class="bi bi-google"></i></a>
+          </section>
+        </div>
+
+      </div>
+    </div>
+    <div class="text-white text-center p-3 bg-dark">© 2022 Copyright</div>
+  </footer>
+  <!-- footer -->
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
